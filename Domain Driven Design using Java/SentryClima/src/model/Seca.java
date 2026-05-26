@@ -24,6 +24,8 @@ public class Seca extends EventoClimatico{
         return deficit;
     }
 
+
+
     public int getDiaSemChuva() {
         return diaSemChuva;
     }
@@ -55,5 +57,17 @@ public class Seca extends EventoClimatico{
 
     public void setPrecipitacao(double precipitacao) {
         this.precipitacao = precipitacao;
+    }
+
+    @Override
+    public String toString() {
+        return "\n==================== " +
+                "\nSECA " +
+                "\n====================" +
+                super.toString() +
+                "\nDias sem Chuva: " + diaSemChuva +
+                "\nNivel Reservatorio: " + nivelReservatorio +
+                "\nEvaporação: " + evapotranspiracao +
+                "\nPrecipitação: " + precipitacao;
     }
 }
