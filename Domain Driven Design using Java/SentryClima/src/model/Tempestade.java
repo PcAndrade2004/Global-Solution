@@ -18,7 +18,7 @@ public class Tempestade extends EventoClimatico{
     @Override
     public NivelAlerta avaliarRisco() {
         if (precipitacao > 200 || velocidadeVento > 200) {
-            return NivelAlerta.CALAMIDADE;
+            return NivelAlerta.NORMAL;
         }else if(precipitacao > 100 && velocidadeVento > 120) {
             return NivelAlerta.EMERGENCIA;
         }else if (precipitacao >= 50 && precipitacao <= 100 || velocidadeVento >= 80 && velocidadeVento <= 120) {

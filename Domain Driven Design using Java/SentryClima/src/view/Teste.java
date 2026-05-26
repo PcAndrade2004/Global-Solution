@@ -33,7 +33,7 @@ public class Teste {
 
         System.out.println(temp);
         System.out.println("Intensidade da Tempestade: " + temp.calcularIntensidade());
-        System.out.println("Nível de Alerta " + temp.avaliarRisco());
+        System.out.println("Nível de Alerta " + temp.avaliarRisco().getDescricao());
 
     }
 }
