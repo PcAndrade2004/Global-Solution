@@ -50,10 +50,9 @@ public abstract class EventoClimatico {
 
     @Override
     public String toString() {
-        return "Eventos Climaticos: "
-                + "\nid: " + id
-                + ", \nDescrição: " + descricao
-                + ", \nData Ocorrencia: " + dataOcorrencia
-                + ",\nNivel Risco: " + nivelRisco;
+        return   "\nid: " + id
+                + "\nDescrição: " + descricao
+                + "\nData Ocorrencia: " + dataOcorrencia
+                + "\nNivel Risco: " + nivelRisco;
     }
 }
