@@ -1,6 +1,7 @@
 package model;
 
 public enum NivelAlerta {
+
     NORMAL("Situação normal, sem riscos"),
     ATENCAO("Requer atenção, monitoramento necessário"),
     ALERTA("Situação de alerta, prepare-se"),
