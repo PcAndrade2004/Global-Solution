@@ -17,6 +17,10 @@ public class Regiao {
         this.eventos = new ArrayList<>();
     }
 
+    public void adicionarEvento(EventoClimatico evento) {
+        this.eventos.add(evento);
+    }
+
     public String getNome() {
         return nome;
     }
