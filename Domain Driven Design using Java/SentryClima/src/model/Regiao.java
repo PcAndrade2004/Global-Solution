@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Regiao {
@@ -9,7 +10,12 @@ public class Regiao {
     private int populacao;
     private List<EventoClimatico> eventos;
 
-
+    public Regiao(String nome, String estado, int populacao) {
+        this.nome = nome;
+        this.estado = estado;
+        this.populacao = populacao;
+        this.eventos = new ArrayList<>();
+    }
 
     public String getNome() {
         return nome;
