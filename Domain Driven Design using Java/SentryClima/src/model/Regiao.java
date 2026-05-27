@@ -21,6 +21,17 @@ public class Regiao {
         this.eventos.add(evento);
     }
 
+    public String gerarRelatorio() {
+        StringBuilder relatorio = new StringBuilder();
+
+        for (EventoClimatico evento : this.eventos) {
+            relatorio.append(evento);
+            relatorio.append("\n");
+        }
+
+        return relatorio.toString();
+    }
+
     public String getNome() {
         return nome;
     }
