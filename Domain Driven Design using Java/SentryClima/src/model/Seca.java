@@ -24,7 +24,20 @@ public class Seca extends EventoClimatico{
         return deficit;
     }
 
-
+    @Override
+    public NivelAlerta avaliarRisco() {
+        if(nivelReservatorio < 5) {
+            return NivelAlerta.CALAMIDADE;
+        } else if(nivelReservatorio < 12) {
+            return NivelAlerta.EMERGENCIA;
+        } else if(nivelReservatorio < 20) {
+            return NivelAlerta.ALERTA;
+        } else if(nivelReservatorio < 30) {
+            return NivelAlerta.ATENCAO;
+        } else {
+            return NivelAlerta.NORMAL;
+        }
+    }
 
     public int getDiaSemChuva() {
         return diaSemChuva;
