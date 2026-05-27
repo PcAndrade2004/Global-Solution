@@ -66,10 +66,9 @@ public class Regiao {
 
     @Override
     public String toString() {
-        return "Região: " +
-                "Nome:" + nome +
-                "Estado: " + estado +
-                "População: " + populacao +
-                "Eventos: " + eventos;
+        return "[ REGIÃO ]" + "\n" +
+                "| Nome       : " + nome + "\n" +
+                "| Estado     : " + estado + "\n" +
+                "| População  : " + populacao + "\n";
     }
 }
