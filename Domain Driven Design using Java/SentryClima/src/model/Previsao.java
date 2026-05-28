@@ -14,6 +14,11 @@ public class Previsao {
         this.regiao = regiao;
     }
 
+    public double calcularIndiceCalor() {
+        double indiceCalor = temperatura + (0.33 * umidade) - 4.00;
+        return indiceCalor;
+    }
+
     public String getDataPrevisao() {
         return dataPrevisao;
     }
