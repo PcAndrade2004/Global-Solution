@@ -19,6 +19,8 @@ public class Previsao {
         return indiceCalor;
     }
 
+
+
     public String getDataPrevisao() {
         return dataPrevisao;
     }
