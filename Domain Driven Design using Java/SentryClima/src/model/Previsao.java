@@ -35,6 +35,18 @@ public class Previsao {
         }
     }
 
+    public String gerarAlerta() {
+        AlertaIndiceCalor alerta = classificarClima();
+
+        return "\n[ ALERTA METEOROLÓGICO ]" + "\n" +
+                "| Data            : " + dataPrevisao + "\n" +
+                "| Temperatura     : " + String.format("%.1f", temperatura) + "°C" + "\n" +
+                "| Umidade         : " + String.format("%.1f", umidade) + "%" + "\n" +
+                "| Índice de Calor : " + String.format("%.2f", calcularIndiceCalor()) + "\n" +
+                "| Situação        : " + alerta + " - " + alerta.getDescricao() + "\n" +
+                "| Região          : " + regiao.toString();
+    }
+
     public String getDataPrevisao() {
         return dataPrevisao;
     }
