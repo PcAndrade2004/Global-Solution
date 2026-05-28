@@ -19,7 +19,21 @@ public class Previsao {
         return indiceCalor;
     }
 
+    public AlertaIndiceCalor classificarClima() {
+        double indice = calcularIndiceCalor();
 
+        if(indice >= 125) {
+            return AlertaIndiceCalor.PERIGO_EXTREMO;
+        } else if(indice >= 103) {
+            return AlertaIndiceCalor.PERIGO;
+        } else if(indice >= 90) {
+            return AlertaIndiceCalor.EXTREMO_CAUTELA;
+        } else if(indice >= 80) {
+            return AlertaIndiceCalor.CUIDADO;
+        } else {
+            return AlertaIndiceCalor.NORMAL;
+        }
+    }
 
     public String getDataPrevisao() {
         return dataPrevisao;
